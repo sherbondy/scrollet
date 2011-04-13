@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Scrollet: a tilt scrolling bookmarklet</title>
+        <meta name="viewport" content="width=device-width">
+        <style type='text/css'>
+            html {
+                width: 320px;
+            }
+            body {
+                margin: 0 auto;
+                padding: 16px;
+                font-family: 'Helvetica Neue';
+            }
+            textarea {
+                width: 100%;
+            }
+            footer {
+                margin: 16px 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Scrollet</h1>
+
+        <h2>A tilt scrolling bookmarklet for Firefox and Mobile Safari.</h2>
+        <p>
+            Inspired by the tilt scrolling feature in the
+            <a href="http://www.instapaper.com/iphone">Instapaper iPhone app</a> 
+            created by Marco Arment, I decided to go ahead and make a bookmarlet 
+            to enable tilt scrolling on any webpage using the JavaScript 
+            <a href="http://dev.w3.org/geo/api/spec-source-orientation">deviceorientation API</a>
+            and its <a href="https://developer.mozilla.org/en/Detecting_device_orientation">Firefox counterpart</a>.
+        </p>
+
+        <p>You can install the Bookmarklet in Firefox 3.5+ by dragging this link to your Bookmarks Toolbar:</p>
+        <p><a href="javascript:(function(){d=document;_ts=d.createElement('SCRIPT');_ts.type='text/javascript';_ts.src='http://www.scrollet.com/script.js?x='+(Math.random());d.getElementsByTagName('head')[0].appendChild(_ts);})();">
+            Scrollet</a></p>
+
+        <p>In Mobile Safari, copy the following text and Edit an existing bookmarklet, replacing the Address with the text:</p>
+        <textarea rows="6">javascript:(function(){d=document;_ts=d.createElement('SCRIPT');_ts.type='text/javascript';_ts.src='http://www.scrollet.com/script.js?x='+(Math.random());d.getElementsByTagName('head')[0].appendChild(_ts);})();</textarea>
+
+        <footer>Created by Ethan Sherbondy</footer>
+    </body>
+</html>
