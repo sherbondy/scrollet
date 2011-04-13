@@ -7,6 +7,7 @@ scrollet =
         a.id = 'ts_alert'
         a.innerHTML = 'Tilt scrolling enabled'
         a.style.position ='absolute'
+        a.style.zIndex = 99
         a.style.left = 0
         a.style.top = 0
         a.style.opacity = 0
