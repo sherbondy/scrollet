@@ -59,6 +59,7 @@ scrollet =
             window.setTimeout 'document.getElementsByTagName("body")[0].removeChild(scrollet.alert)', 200
         else
             scrollet.alert.style.opacity = 1
+            scrollet.moveAlert()
             window.setTimeout 'scrollet.toggleAlert()', 2000
 
     scroll: ->

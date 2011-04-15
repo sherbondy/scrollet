@@ -68,6 +68,7 @@ scrollet = {
       return window.setTimeout('document.getElementsByTagName("body")[0].removeChild(scrollet.alert)', 200);
     } else {
       scrollet.alert.style.opacity = 1;
+      scrollet.moveAlert();
       return window.setTimeout('scrollet.toggleAlert()', 2000);
     }
   },
